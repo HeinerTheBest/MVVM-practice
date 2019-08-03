@@ -10,7 +10,7 @@
 
         <variable
                 name="viewModel"
-                type="com.mobileapps.mvvmpractice.MainViewModel"/>
+                type="com.mobileapps.mvvmpractice.viewmodel.MainViewModel"/>
     </data>
 
 <androidx.constraintlayout.widget.ConstraintLayout

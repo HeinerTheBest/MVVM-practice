@@ -1,7 +1,9 @@
-package com.mobileapps.mvvmpractice
+package com.mobileapps.mvvmpractice.viewmodel
 
 import androidx.databinding.ObservableField
 import androidx.lifecycle.ViewModel
+import com.mobileapps.mvvmpractice.model.OnDataReadyCallback
+import com.mobileapps.mvvmpractice.model.RepoModel
 
 
 class MainViewModel : ViewModel() {
@@ -14,7 +16,7 @@ class MainViewModel : ViewModel() {
 
     fun refresh(){
         isLoading.set(true)
-        repoModel.refreshData(object : OnDataReadyCallback{
+        repoModel.refreshData(object : OnDataReadyCallback {
             override fun onDataReady(data: String) {
                 isLoading.set(false)
                 text.set(data)

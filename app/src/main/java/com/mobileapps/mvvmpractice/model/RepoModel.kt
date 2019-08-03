@@ -1,5 +1,6 @@
-package com.mobileapps.mvvmpractice
+package com.mobileapps.mvvmpractice.model
 
+import com.mobileapps.mvvmpractice.model.OnDataReadyCallback
 import java.util.*
 import kotlin.concurrent.timerTask
 
