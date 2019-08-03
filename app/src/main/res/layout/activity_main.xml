@@ -38,8 +38,9 @@
             android:layout_height="wrap_content"/>
     <Button
             android:id="@+id/refresh_button"
-            android:onClick="@{()->viewModel.refres()}"
-            android:clickable="@{viewModel.isLoading() ? false : true}"
+            android:onClick="@{() -> viewModel.refresh()}"
+            android:clickable="@{viewModel.isLoading ? false : true}"
+
             android:text="Refresh"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
