@@ -1,9 +1,10 @@
 package com.mobileapps.mvvmpractice
 
 import androidx.databinding.ObservableField
+import androidx.lifecycle.ViewModel
 
 
-class MainViewModel{
+class MainViewModel : ViewModel() {
 
     var repoModel : RepoModel = RepoModel()
 
